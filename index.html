@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Resize</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-2xl text-center my-4 font-bold">Image Resizer</h1>
+    <div class="flex item-center justify-center my-3">
+        <label class="bg-blue-700 text-white p-3 rounded-md cursor-pointer" for="file">Upload Image</label>
+    </div>
+    <input class="hidden" id="file" type="file">
+
+    <div id="image-container" class="w-[600px] h-[300px] flex item-center justify-center mx-auto border-2 border-black rounded-md">
+        <img class="hidden" id="upload-image" src="#" alt="Upload image">
+    </div>
+
+    <div class="grid grid-cols-4 grid-rows-1 gap-24 text-white my-8 mx-16">
+        <button class="w-full bg-pink-700 p-2 rounded-md" id="resize-button-instagram">Instagram (1080x1080)</button>
+        <button class="w-full bg-blue-700 p-2 rounded-md" id="resize-button-facebook">Facebook (1200x630)</button>
+        <button class="w-full bg-black p-2 rounded-md" id="resize-button-twitter">Twitter (1200x675)</button>
+        <button class="w-full bg-yellow-500 p-2 rounded-md" id="resize-button-website">Website (600x300)</button>
+    </div>
+    <div class="flex item-center justify-center">
+        <button id="downloadbtn" class="hidden bg-blue-700 text-white px-4 py-2 text-xl rounded-md">Download</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
